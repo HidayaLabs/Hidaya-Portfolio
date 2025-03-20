@@ -5,48 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Touché Créative</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Playfair+Display:wght@700&display=swap');
+        
+        /* تأثير التوهج عند تمرير الفأرة */
+        .logo:hover {
+            filter: drop-shadow(0 0 10px gold);
+            transition: 0.3s ease-in-out;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white flex flex-col items-center min-h-screen p-4">
-    
-    <header class="w-full text-center py-6">
-        <img src="logo.PNG" alt="شعار الموقع" class="w-24 h-24 mx-auto rounded-full shadow-lg">
-        <h1 class="text-3xl font-bold mt-4">مرحبًا، أنا المصممة البارعة</h1>
+<body class="bg-gray-900 flex flex-col items-center justify-center min-h-screen text-white">
+
+    <!-- ✅ رأس الصفحة يحتوي على الشعار -->
+    <header class="w-full bg-black py-4 shadow-md flex justify-center">
+        <img src="images/Touché_Créative.jpg" alt="Touché Créative Logo" class="h-20 logo">
     </header>
-    
-    <section class="bg-white text-black w-full max-w-3xl p-6 rounded-lg shadow-lg my-4">
-        <h2 class="text-2xl font-semibold text-center mb-4">مجالات عملي</h2>
-        <ul class="list-disc list-inside space-y-2">
-            <li>التصميم الجرافيكي</li>
-            <li>تصميم الفيديو والمونتاج</li>
-            <li>التسويق الإلكتروني</li>
-            <li>إدارة وسائل التواصل الاجتماعي</li>
-        </ul>
-    </section>
-    
-    <section class="bg-white text-black w-full max-w-3xl p-6 rounded-lg shadow-lg my-4">
-        <h2 class="text-2xl font-semibold text-center mb-4">فيديو تعريفي</h2>
-        <video controls class="w-full rounded-lg shadow-lg">
-            <source src="videos.mp4" type="video/mp4">
-            متصفحك لا يدعم تشغيل الفيديو.
-        </video>
-        <h2 class="text-2xl font-semibold text-center mt-6">بعض أعمالي</h2>
-        <img src="images.png" alt="صورة من أعمالي" class="w-full rounded-lg shadow-lg mt-4">
-    </section>
-    
-    <section class="bg-white text-black w-full max-w-3xl p-6 rounded-lg shadow-lg my-4">
-        <h2 class="text-2xl font-semibold text-center mb-4">تواصل معي</h2>
-        <ul class="space-y-2 text-center">
-            <li><a href="https://www.facebook.com/people/Touche-cr%C3%A9ative/61572392880542/?locale=ar_AR" target="_blank" class="text-blue-500 hover:underline">فيسبوك</a></li>
-            <li><a href="https://www.instagram.com/clairdelune2026/" target="_blank" class="text-pink-500 hover:underline">إنستقرام</a></li>
-            <li><a href="https://www.tiktok.com/@hodhodelbarak1" target="_blank" class="text-red-500 hover:underline">تيك توك</a></li>
-            <li><a href="mailto:hdhdalbraq@gmail.com" class="text-green-500 hover:underline">البريد الإلكتروني</a></li>
-        </ul>
-    </section>
-    
-    <footer class="text-center text-sm mt-6">
-        <p>&copy; 2025 جميع الحقوق محفوظة للمصممة البارعة</p>
+
+    <!-- ✅ محتوى الصفحة -->
+    <main class="text-center mt-10">
+        <h1 class="text-5xl font-playfair">Touché</h1>
+        <h2 class="text-2xl font-playfair text-gray-400">CRÉATIVE</h2>
+        <p class="text-3xl font-cairo mt-4">كل خدماتك في مكان واحد</p>
+    </main>
+
+    <!-- ✅ تذييل الصفحة -->
+    <footer class="w-full bg-gray-800 py-4 text-center mt-10 text-gray-400">
+        &copy; 2025 Touché Créative - جميع الحقوق محفوظة
     </footer>
-    
+
 </body>
 </html>
+
 
