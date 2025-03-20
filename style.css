@@ -24,11 +24,6 @@ header {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.about:hover, .media:hover, .contact:hover {
-    transform: scale(1.02);
 }
 
 .about ul, .contact ul {
@@ -57,7 +52,7 @@ header {
 .contact a {
     text-decoration: none;
     font-size: 18px;
-    color: #ff9800;
+    color: #007BFF;
     display: block;
     margin: 10px 0;
 }
@@ -71,17 +66,4 @@ footer {
     color: white;
     padding: 10px;
     margin-top: 20px;
-}
-
-/* تحسين استجابة الموقع للشاشات الصغيرة */
-@media (max-width: 768px) {
-    .about, .media, .contact {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .about li, .contact li {
-        font-size: 16px;
-        padding: 8px;
-    }
 }
