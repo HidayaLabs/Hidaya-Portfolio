@@ -1,41 +1,31 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Touché Créative</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Playfair+Display:wght@700&display=swap');
-        
-        /* تأثير التوهج عند تمرير الفأرة */
-        .logo:hover {
-            filter: drop-shadow(0 0 10px gold);
-            transition: 0.3s ease-in-out;
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Touché Créative</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        body {
+            font-family: 'Playfair Display', serif;
         }
-    </style>
-</head>
-<body class="bg-gray-900 flex flex-col items-center justify-center min-h-screen text-white">
-
-    <!-- ✅ رأس الصفحة يحتوي على الشعار -->
-    <header class="w-full bg-black py-4 shadow-md flex justify-center">
-        <img src="images/Touché_Créative.jpg" alt="Touché Créative Logo" class="h-20 logo">
-    </header>
-
-    <!-- ✅ محتوى الصفحة -->
-    <main class="text-center mt-10">
-        <h1 class="text-5xl font-playfair">Touché</h1>
-        <h2 class="text-2xl font-playfair text-gray-400">CRÉATIVE</h2>
-        <p class="text-3xl font-cairo mt-4">كل خدماتك في مكان واحد</p>
-    </main>
-
-    <!-- ✅ تذييل الصفحة -->
-    <footer class="w-full bg-gray-800 py-4 text-center mt-10 text-gray-400">
-        &copy; 2025 Touché Créative - جميع الحقوق محفوظة
-    </footer>
-
-</body>
+  </style>
+ </head>
+ <body class="bg-gradient-to-r from-gray-900 to-gray-800 flex items-center justify-center min-h-screen">
+  <div class="relative bg-black p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+   <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-700 opacity-50 rounded-lg"></div>
+   <div class="relative z-10 text-center">
+    <!-- 🔹 صورة الشعار -->
+    <img src="logo.png" alt="Touché Créative Logo" class="mx-auto w-64">
+   </div>
+   <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-r from-yellow-500 to-yellow-700 opacity-50 rounded-b-lg"></div>
+   <div class="absolute inset-x-0 bottom-0 h-1/2 flex items-center justify-center">
+    <img alt="Decorative golden wave pattern" class="w-full h-full object-cover opacity-50" src="https://placehold.co/600x200/000000/000000"/>
+   </div>
+  </div>
+ </body>
 </html>
+
 
 
