@@ -2,34 +2,67 @@
 
 body {
     font-family: 'Cairo', sans-serif;
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
 }
 
-.content-box {
+header {
+    width: 100%;
+    text-align: center;
+    padding: 24px 0;
+}
+
+header img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+section {
     background: white;
     color: black;
     width: 100%;
-    max-width: 700px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
-    margin: 20px 0;
+    max-width: 768px;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
+    margin-bottom: 16px;
 }
 
-.section-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #2c3e50;
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-.social-link {
-    color: #3498db;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+video, img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
 }
 
-.social-link:hover {
-    color: #1abc9c;
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 24px;
 }
+
