@@ -1,35 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Touché Creative</title>
+    <title>Touché Créative</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Playfair+Display:wght@700&display=swap');
-    </style>
 </head>
-<body class="bg-gray-900 flex flex-col items-center justify-center min-h-screen">
+<body class="bg-gradient-to-r from-gray-900 to-black text-white flex flex-col items-center min-h-screen p-4">
     
-    <!-- الشعار في رأس الموقع -->
-    <header class="w-full max-w-4xl p-4 text-center">
-        <img src="Touché Créative.jpg" alt="Touché Créative Logo" class="mx-auto w-48 h-auto">
+    <!-- شريط التنقل (Navbar) -->
+    <nav class="w-full bg-black bg-opacity-70 py-4 px-8 flex justify-between items-center shadow-lg">
+        <div class="flex items-center space-x-4">
+            <img src="logo.PNG" alt="شعار الموقع" class="w-16 h-16 rounded-full shadow-lg">
+            <h1 class="text-2xl font-bold">Touché Créative</h1>
+        </div>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="hover:text-yellow-400">الرئيسية</a></li>
+            <li><a href="#services" class="hover:text-yellow-400">مجالات العمل</a></li>
+            <li><a href="#portfolio" class="hover:text-yellow-400">أعمالي</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400">تواصل معي</a></li>
+        </ul>
+    </nav>
+
+    <!-- مقدمة الموقع -->
+    <header class="text-center py-12">
+        <h1 class="text-4xl font-bold mt-4 text-yellow-400">مرحبًا، أنا المصممة البارعة</h1>
+        <p class="text-lg text-gray-300 mt-2">أقدم خدمات التصميم والتسويق الإلكتروني بكل احترافية</p>
     </header>
     
-    <div class="relative w-full max-w-4xl p-8 bg-black rounded-lg shadow-lg">
-        <img alt="Decorative background with golden accents and abstract patterns" 
-             class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-50" 
-             src="https://placehold.co/800x400">
-        <div class="relative z-10 text-center">
-            <p class="text-3xl font-cairo text-white">
-                كل خدماتك في مكان واحد
-            </p>
-        </div>
-    </div>
+    <!-- مجالات العمل -->
+    <section id="services" class="bg-white text-black w-full max-w-3xl p-6 rounded-lg shadow-lg my-4">
+        <h2 class="text-2xl font-semibold text-center mb-4">مجالات عملي</h2>
+        <ul class="list-disc list-inside space-y-2 text-center">
+            <li>🎨 التصميم الجرافيكي</li>
+            <li>🎬 تصميم الفيديو والمونتاج</li>
+            <li>📢 التسويق الإلكتروني</li>
+            <li>📱 إدارة وسائل التواصل الاجتماعي</li>
+        </ul>
+    </section>
     
+    <!-- فيديو تعريفي وأعمال سابقة -->
+    <section id="portfolio" class="bg-white text-black w-full max-w-3xl p-6 rounded-lg shadow-lg my-4">
+        <h2 class="text-2xl font-semibold text-center mb-4">فيديو تعريفي</h2>
+        <video controls class="w-full rounded-lg shadow-lg">
+            <source src="videos.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+        <h2 class="text-2xl font-semibold text-center mt-6">بعض أعمالي</h2>
+        <img src="images.png" alt="صورة من أعمالي" class="w-full rounded-lg shadow-lg mt-4">
+    </section>
+    
+    <!-- قسم التواصل -->
+    <section id="contact" class="bg-white text-black w-full max-w-3xl p-6 rounded-lg shadow-lg my-4">
+        <h2 class="text-2xl font-semibold text-center mb-4">تواصل معي</h2>
+        <ul class="space-y-2 text-center">
+            <li>📘 <a href="https://www.facebook.com/people/Touche-cr%C3%A9ative/61572392880542/?locale=ar_AR" target="_blank" class="text-blue-500 hover:underline">فيسبوك</a></li>
+            <li>📸 <a href="https://www.instagram.com/clairdelune2026/" target="_blank" class="text-pink-500 hover:underline">إنستقرام</a></li>
+            <li>🎵 <a href="https://www.tiktok.com/@hodhodelbarak1" target="_blank" class="text-red-500 hover:underline">تيك توك</a></li>
+            <li>📧 <a href="mailto:hdhdalbraq@gmail.com" class="text-green-500 hover:underline">البريد الإلكتروني</a></li>
+        </ul>
+    </section>
+    
+    <!-- الفوتر -->
+    <footer class="text-center text-sm mt-6 text-gray-400">
+        <p>&copy; 2025 جميع الحقوق محفوظة للمصممة البارعة</p>
+    </footer>
+
 </body>
 </html>
-
 
 
