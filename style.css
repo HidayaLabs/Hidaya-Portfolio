@@ -1,41 +1,114 @@
+/* تعيين الخطوط الأساسية */
 body {
-    font-family: Arial, sans-serif;
-    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(to right, #1e293b, #0f172a);
+    color: white;
     text-align: center;
-    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
+/* شريط التنقل */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.content {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #facc15;
+}
+
+/* قسم المقدمة */
+.header {
+    padding: 100px 20px 50px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #facc15;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #d1d5db;
+}
+
+/* الأقسام */
+.section {
     background: white;
+    color: black;
     margin: 20px auto;
     padding: 20px;
-    width: 80%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-ul {
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.section ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
-    font-size: 18px;
+.section ul li {
+    font-size: 1.2rem;
     margin: 10px 0;
 }
 
-footer {
-    background-color: #222;
-    color: white;
+/* فيديو وصور */
+video, .portfolio-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* الفوتر */
+.footer {
     padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
     margin-top: 20px;
 }
+
